@@ -6,5 +6,6 @@ func Start() {
 	// creates an engine
 	// Creates a gin router with default middleware - logger and recovery
 	routerEngine := gin.Default()
-	routerEngine.BasePath("/api")
+	//routerEngine.Handlers
+	routerEngine.Run("localhost:9090")
 }
