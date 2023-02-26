@@ -3,9 +3,10 @@
 RESTful API examples using Gin, Swagger, Hystrix and GORM using Postgres DB
 Later, it will also have implementation of Proto Buffer Impl.
 
-Gin - Middlewares: Authorization, Logging and Debugging
-Data binding and validation
+Gin - Middlewares: Authorization, Logging and Debugging - https://github.com/gin-gonic/gin
+Validator - Data binding and validation - https://github.com/go-playground/validator
 HTML, Templates and Multi Route Grouping
+Logrus - https://github.com/sirupsen/logrus
 GORM Library
 BDD Testing with Ginkgo and omega
 JWT Authorization

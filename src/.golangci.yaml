@@ -1,0 +1,59 @@
+issues:
+  exclude:
+    - "Error return value of .((os\\.)?std(out|err)\\..*|.*Close|.*Flush|os\\.Remove(All)?|.*printf?|os\\.(Un)?Setenv). is not checked"
+    - "exported (type|method|function) (.+) should have comment or be unexported"
+    - "ST1000: at least one file in a package should have a package comment"
+  exclude-rules:
+    - path: '(.+)_test\.go'
+      linters:
+        - funlen
+        - goconst
+linters:
+  # Disable all linters.
+  # Default: false
+  disable-all: true
+  # Enable specific linter
+  # https://golangci-lint.run/usage/linters/#enabled-by-default
+  enable:
+    - asasalint
+    - asciicheck
+    - bidichk
+    - bodyclose
+    - containedctx
+    - govet
+    - grouper
+    - ifshort
+    - importas
+    - ineffassign
+    - interfacebloat
+    - nakedret
+    - nestif
+    - wsl
+  # Enable all available linters.
+  # Default: false
+  enable-all: true
+  # Disable specific linter
+  # https://golangci-lint.run/usage/linters/#disabled-by-default
+  disable:
+    - asasalint
+    - asciicheck
+    - bidichk
+    - bodyclose
+    - goimports
+    - golint
+    - gomnd
+    - gomoddirectives
+    - gomodguard
+    - goprintffuncname
+    - gosec
+    - gosimple
+    - govet
+  # Enable presets.
+  # https://golangci-lint.run/usage/linters
+  presets:
+    - bugs
+    - comment
+    - complexity
+  # Run only fast linters from enabled linters set (first run won't be fast)
+  # Default: false
+  fast: true

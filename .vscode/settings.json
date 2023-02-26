@@ -11,5 +11,10 @@
             "password": "password"
         }
     ],
-    "go.toolsEnvVars": {}
+    "go.toolsEnvVars": {},
+    "go.lintTool": "golangci-lint",
+    "go.lintFlags": [
+        "--fast"
+    ],
+    "go.autocompleteUnimportedPackages": true
 }
